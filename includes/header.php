@@ -8,5 +8,9 @@
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="assets/style.css?key=<?php echo time(); ?>">
+
+    <!-- JS Links -->
+    <script language="JavaScript"  src="assets/js/v1100min.js"></script>
+    <script src="assets/js/v341min.js"></script>
 </head>
 <body>

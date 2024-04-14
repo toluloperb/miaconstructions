@@ -9,3 +9,7 @@
         <p>We Help Your Brand Burst Onto The Digital Stage. We’re not your usual branding agency, We are Flames of Creativity</p>
     </div>
 </section>
+
+<?php
+    include("includes/footer.php");
+?>
