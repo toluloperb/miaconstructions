@@ -4,9 +4,9 @@
     </div>
     <div class="menuContainer">
         <li>
-            <a href="">Home</a>
-            <a href="">Portfolio</a>
-            <a href=""><button>Get a Quote</button></a>
+            <a class="link" href="">Home</a>
+            <a class="link" href="">Portfolio</a>
+            <a href="" style="padding: none; border: none"><button>Get a Quote</button></a>
         </li>
     </div>
     <div class="logoContainer menu">

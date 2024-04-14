@@ -55,8 +55,17 @@ body {
 
 .menuContainer li a {
     text-decoration: none;
-    margin-left: 60px;
+    margin-left: 20px;
     color: var(--main);
+}
+
+.menuContainer li .link {
+    padding: 6px 17px;
+    border-radius: 25px;
+}
+
+.menuContainer li a:hover {
+    background-color: #eeeeee;
 }
 
 .menuContainer li a button {
@@ -158,5 +167,75 @@ body {
     .landingScreen p {
         font-size: 15pt;
         margin-top: 20px;
+    }
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.content .container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    width: 50%;
+}
+
+.content .container h3 {
+    font-size: 40pt;
+    line-height: 53px;
+}
+
+.content .container p {
+    margin-top: 20px;
+    width: 85%;
+}
+
+.button {
+    padding: 8px 20px;
+    font-family: var(--font-family);
+    color: var(--body-color);
+    border: none;
+    background-color: var(--main);
+    margin-top: 30px;
+}
+
+.title img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .content .container {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content .container h3 {
+        font-size: 25pt;
+        line-height: 36px;
+    }
+
+    .content .container p {
+        width: 100%;
     }
 }
