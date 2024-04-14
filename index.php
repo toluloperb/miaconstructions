@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIBE Business Agency</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+    include("includes/header.php");
+    include("includes/navbar.php");
+?>
+
+<section class="landingScreen">
+    <div class="container">
+        <h3>We are success oriented and integrous</h3>
+        <p>We Help Your Brand Burst Onto The Digital Stage. We’re not your usual branding agency, We are Flames of Creativity</p>
+    </div>
+</section>
