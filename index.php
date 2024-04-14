@@ -24,6 +24,103 @@
     </div>
 </section>
 
+<section class="content clients">
+    <div class="top">
+        <h3>Best of Us &#128523;</h3>
+        <p>Projects featured today by our curators</p>
+    </div>
+    <div class="projects">
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eachproject">
+            <div class="backgroundImage"></div>
+            <div class="descript">
+                <p>Project title</p>
+                <div class="actions">
+                    <p><i class="fa fa-thumbs-up"></i> 120</p>
+                    <p><i class="fa">&#xf06e;</i> 200</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href=""><button class="button">Explore</button></a>
+</section>
+
 <?php
     include("includes/footer.php");
 ?>

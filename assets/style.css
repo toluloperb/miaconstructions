@@ -131,7 +131,7 @@ body {
 .landingScreen {
     width: 100%;
     height: 100vh;
-    background-color: var(--body-color);
+    background-color: var(--main);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,11 +146,13 @@ body {
 .landingScreen h3 {
     font-size: var(--big-font);
     line-height: 65px;
+    color: var(--body-color);
 }
 
 .landingScreen p {
     font-size: 18pt;
     margin-top: 20px;
+    color: var(--body-color);
 }
 
 @media only screen and (max-width: 720px) {
@@ -167,6 +169,11 @@ body {
     .landingScreen p {
         font-size: 15pt;
         margin-top: 20px;
+    }
+
+    .landingScreen {
+        height: 100%;
+        padding: 180px 0px 90px 0px;
     }
 }
 
@@ -201,6 +208,7 @@ body {
 .content .container p {
     margin-top: 20px;
     width: 85%;
+    font-family: "Roboto", sans-serif;
 }
 
 .button {
@@ -236,6 +244,99 @@ body {
     }
 
     .content .container p {
+        width: 100%;
+    }
+}
+
+.clients {
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+.top {
+    text-align: center;
+}
+
+.top h3 {
+    font-size: 40pt;
+}
+
+.top p {
+    font-family: "Roboto", sans-serif;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.eachproject {
+    margin-right: 10px;
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.eachproject:last-child {
+    margin-right: 0;
+}
+
+.backgroundImage {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(114, 148, 148);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.backgroundImage:hover {
+    background-color: #1a1a1a;
+}
+
+.descript {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10pt;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin: 4px 2px;
+    color: #535353;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.actions p {
+    margin-left: 8px;
+}
+
+@media only screen and (max-width: 720px) {
+    .top {
+        text-align: left;
+    }
+
+    .top h3 {
+        font-size: 25pt;
+        margin: 0;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .eachproject {
         width: 100%;
     }
 }
