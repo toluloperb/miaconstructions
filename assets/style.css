@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/effra-medium');
 
 * {
     margin: 0;
@@ -271,7 +272,7 @@ body {
     flex-wrap: wrap;
     width: 80%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .eachproject {
@@ -325,6 +326,7 @@ body {
 @media only screen and (max-width: 720px) {
     .top {
         text-align: left;
+        width: 80%;
     }
 
     .top h3 {
@@ -338,5 +340,37 @@ body {
 
     .eachproject {
         width: 100%;
+    }
+}
+
+.clientsLogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+.clientsLogos img {
+    height: 35px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin: 0px 50px;
+    margin-bottom: 40px;
+}
+
+.clientsLogos img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 720px) {
+    .clientsLogos {
+        width: 100%;
+    }
+
+    .clientsLogos img {
+        margin: 0px 27px;
+        margin-bottom: 27px;
     }
 }

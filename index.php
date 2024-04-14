@@ -121,6 +121,19 @@
     <a href=""><button class="button">Explore</button></a>
 </section>
 
+<section class="content">
+    <div class="top">
+        <p>Trusted by current and soon to be WORLD-CLASS brands</p>
+    </div>
+    <div class="projects clientsLogos">
+        <a href=""><img src="assets/images/theima.png" alt=""></a>
+        <a href=""><img src="assets/images/69logo.png" alt=""></a>
+        <a href=""><img src="assets/images/kayl logo.png" alt=""></a>
+        <a href=""><img src="assets/images/manorlogo.png" alt=""></a>
+        <a href=""><img src="assets/images/atunes logo.png" alt=""></a>
+    </div>
+</section>
+
 <?php
     include("includes/footer.php");
 ?>
