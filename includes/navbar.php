@@ -6,6 +6,7 @@
         <li>
             <a class="link" href="">Home</a>
             <a class="link" href="">Portfolio</a>
+            <a class="link" href="">Career</a>
             <a href="" style="padding: none; border: none"><button>Get a Quote</button></a>
         </li>
     </div>
@@ -19,6 +20,7 @@
     <li>
         <a href="">Home</a>
         <a href="">Portfolio</a>
+        <a href="">Career</a>
         <a href=""><button>Get a Quote</button></a>
     </li>
 </div>
