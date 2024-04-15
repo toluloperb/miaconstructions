@@ -416,3 +416,19 @@ body {
         filter: grayscale(0%);
     }
 }
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+hr {
+    width: 80%;
+    opacity: 20%;
+    margin: 15px;
+}
