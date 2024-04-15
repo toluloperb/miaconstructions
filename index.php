@@ -29,7 +29,7 @@
         <h3>Best of Us &#128523;</h3>
         <p>Projects featured today by our curators</p>
     </div>
-    <div class="projects">
+    <div class="projects children">
         <div class="eachproject">
             <div class="backgroundImage"></div>
             <div class="descript">
@@ -131,6 +131,63 @@
         <a href=""><img src="assets/images/kayl logo.png" alt=""></a>
         <a href=""><img src="assets/images/manorlogo.png" alt=""></a>
         <a href=""><img src="assets/images/atunes logo.png" alt=""></a>
+        <a href=""><img src="assets/images/wellx logo.png" alt=""></a>
+    </div>
+</section>
+
+<section class="content">
+    <div class="top">
+        <p>What we offer</p>
+        <h3>Join the WORLD-CLASS clique</h3>
+    </div>
+    <div class="projects services">
+        <div class="eachproject eachservices">
+            <img src="assets/images/logo-design.png" alt="">
+            <h3><strong>Brand Identity/Logo</strong></h3>
+            <p>Our team is set to help you level up! We work with you to create a 
+                blisteringly brilliant visual identity, and to powerfully define your messaging, 
+                positioning & values.</p>
+        </div>
+
+        <div class="eachproject eachservices">
+            <img src="assets/images/web.png" alt="">
+            <h3><strong>Web Development</strong></h3>
+            <p>Our team of techie talents have decades of combined experience in creating completely 
+                bespoke websites. We can sprinkle our digital magic to conjure you up a beautiful website.</p>
+        </div>
+
+        <div class="eachproject eachservices">
+            <img src="assets/images/marketing.png" alt="">
+            <h3><strong>Digital Marketing</strong></h3>
+            <p>Your business is unique, as are your digital marketing needs. We are expert in the whole digital 
+                landscape. From SEO to PPC (and every acronym inbetween), nobody provides digital marketing services like us.</p>
+        </div>
+
+        <div class="eachproject eachservices">
+            <img src="assets/images/graphics.png" alt="">
+            <h3><strong>Graphics Designing</strong></h3>
+            <p>We provide businesses with unmatched planning, copywriting, formatting & creative designs suitable for products
+                and services projection to increase customers' perceptions and maximize sales conversion from 0 - 100.
+            </p>
+        </div>
+
+        <div class="eachproject eachservices">
+            <img src="assets/images/social-media.png" alt="">
+            <h3><strong>Social Media</strong></h3>
+            <p>From Twitter to Tiktok, and every platform, reel and piece of content in between - we’ve got you covered. 
+                Managing social media platforms and content creation comes native to us, but we don’t stop there. We nurture 
+                your audience into a meaningful community.</p>
+        </div>
+
+        <div class="eachproject eachservices">
+            <img src="assets/images/print.png" alt="">
+            <h3><strong>Printings & Billboards</strong></h3>
+            <p>Are you looking to expand your brand’s reach?
+                With quality prints(T Shirts, Business Cards, Banners and so on...) and access to over 5,000 billboards in 
+                Lagos, Abuja and all 36 states in Nigeria, we can make sure your message is seen by the people 
+                who matter any day, anytime.
+            </p>
+        </div>
     </div>
 </section>
 

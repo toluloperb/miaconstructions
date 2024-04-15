@@ -5,6 +5,7 @@
     <div class="menuContainer">
         <li>
             <a class="link" href="">Home</a>
+            <a href="" class="link">Services</a>
             <a class="link" href="">Portfolio</a>
             <a class="link" href="">Career</a>
             <a href="" style="padding: none; border: none"><button>Get a Quote</button></a>
@@ -19,6 +20,7 @@
 <div class="mobile_menu_container" id="mobile_menu_container">
     <li>
         <a href="">Home</a>
+        <a href="">Services</a>
         <a href="">Portfolio</a>
         <a href="">Career</a>
         <a href=""><button>Get a Quote</button></a>
