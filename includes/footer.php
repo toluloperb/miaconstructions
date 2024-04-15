@@ -17,6 +17,8 @@
             <div class="linkscategories">
                 <p><strong>Company</strong></p>
                 <a href="">About</a>
+                <a href="portfolio">Portfolio</a>
+                <a href="">Career</a>
                 <a href="">Blog</a>
             </div>
 

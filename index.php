@@ -189,6 +189,7 @@
             </p>
         </div>
     </div>
+    <a href=""><button class="button">Join now</button></a>
 </section>
 
 <?php
