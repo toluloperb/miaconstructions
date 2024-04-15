@@ -1,6 +1,37 @@
 <footer>
     <div class="footer_links">
-        
+        <div class="footer_logo">
+            <a href=""><img src="assets/images/logowhite.png" alt=""></a>
+        </div>
+        <div class="each_links">
+            <div class="linkscategories">
+                <p><strong>Services</strong></p>
+                <a href="">Graphics Designing</a>
+                <a href="">Web Development</a>
+                <a href="">Social Media</a>
+                <a href="">Brand Identity/Logo Design</a>
+                <a href="">Printings & Billboards</a>
+                <a href="">Digital Marketing</a>
+            </div>
+
+            <div class="linkscategories">
+                <p><strong>Company</strong></p>
+                <a href="">About</a>
+                <a href="">Blog</a>
+            </div>
+
+            <div class="linkscategories">
+                <p><strong>Products</strong></p>
+                <a href="">New Stuffs Coming soon</a>
+            </div>
+
+            <div class="linkscategories">
+                <p><strong>Contact</strong></p>
+                <a href="mailto:fibearena@gmail.com">Support</a>
+                <a href="tel:+2348138009003">(+234) 813 800 9003</a>
+                <a>Suite B23, Mercy Plaza Rock Cannan Bus stop, Abeokuta expressway, Ijoko-Abule</a>
+            </div>
+        </div>
     </div>
     <br>
         <hr>
