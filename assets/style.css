@@ -480,6 +480,11 @@ hr {
     margin-top: 15pt;
 }
 
+footer p {
+    font-size: 10.5pt;
+    color: #a3a3a3;
+}
+
 .linkscategories a:hover {
     color: #c49132;
 }
@@ -493,6 +498,7 @@ hr {
     .footer_logo {
         width: 40%;
         margin-bottom: 50px;
+        margin-top: 20px;
     }
 
     .each_links {
@@ -511,5 +517,10 @@ hr {
     
     .linkscategories a, .linkscategories p {
         width: 90%;
+    }
+
+    .linkscategories:nth-child(2n) {
+        margin-left: 10%;
+        width: 40%;
     }
 }

@@ -35,7 +35,7 @@
     </div>
     <br>
         <hr>
-            © 2024 · FIBE Business Agency
+            <p>© 2024 · FIBE Business Agency</p>
         <hr>
     <br>
 </footer>
