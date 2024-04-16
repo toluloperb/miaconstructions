@@ -29,6 +29,7 @@ body {
     background-color: var(--body-color);
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     padding: 12px 10%;
@@ -52,6 +53,10 @@ body {
 
 .menuContainer li {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .menuContainer li a {
@@ -636,6 +641,100 @@ footer p {
 
 @media only screen and (max-width: 1000px) {
     .roletag {
+        width: 100%;
+    }
+}
+
+.formContainer {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.formContainer p {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.formContainer form {
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formContainer form .inputrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+
+.formContainer form .inputrow div, .textarea div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.textarea div {
+    text-align: left;
+    width: 100%;
+}
+
+.textarea div textarea {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 10.5pt;
+    font-family: 'Roboto',sans-serif;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.formContainer form .inputrow div:nth-child(2) {
+    margin-right: 0;
+}
+
+.formContainer form .inputrow div input,
+.formContainer form .inputrow div select {
+    height: 35px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 8px;
+    font-size: 10.5pt;
+}
+
+@media only screen and (max-width: 1000px) {
+    .formContainer {
+        padding: 70px 0px;
+    }
+
+    .formContainer p {
+        width: 80%;
+    }
+
+    .formContainer form {
+        width: 80%;
+    }
+
+    .formContainer form .inputrow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formContainer form .inputrow div {
         width: 100%;
     }
 }

@@ -19,6 +19,7 @@
                 <a href="">About</a>
                 <a href="portfolio">Portfolio</a>
                 <a href="career">Career</a>
+                <a href="book?b=quote">Get a quote</a>
                 <a href="">Blog</a>
             </div>
 

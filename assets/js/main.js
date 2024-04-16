@@ -23,3 +23,39 @@ $(function() {
         document.getElementById('cate_button').style.display = 'flex';
     })
 });
+
+$("input").change(function (){
+    var value = this.value;
+    if(value=="")
+    {
+        $(this).css("border", "2px solid red");
+    }
+    else
+    {
+        $(this).css("border",'2px solid green');
+    }
+}).trigger("change");
+
+$("textarea").change(function (){
+    var value = this.value;
+    if(value=="")
+    {
+        $(this).css("border", "2px solid red");
+    }
+    else
+    {
+        $(this).css("border",'2px solid green');
+    }
+}).trigger("change");
+
+$("select").change(function (){
+    var value = this.value;
+    if(value=="")
+    {
+        $(this).css("border", "2px solid red");
+    }
+    else
+    {
+        $(this).css("border",'2px solid green');
+    }
+}).trigger("change");
