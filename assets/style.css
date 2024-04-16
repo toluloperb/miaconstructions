@@ -221,6 +221,7 @@ body {
     border: none;
     background-color: var(--main);
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .title img {
@@ -591,5 +592,50 @@ footer p {
 
     #cate_button p, #cate_button_close p {
         text-transform: capitalize;
+    }
+}
+
+.eachcareer {
+    width: 100%;
+    background-color: #e6e6e6;
+    border-radius: 7px;
+    border: 1px solid #a3a3a333;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+.roletag {
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #c49132;
+    color: #fff;
+    width: 19%;
+    margin-bottom: 20px;
+}
+
+.jobmode {
+    margin-left: 10px;
+    font-size: 8pt;
+    font-weight: 100;
+    padding: 2px 10px;
+    border-radius: 25px;
+    background-color: green;
+    color: #fff;
+}
+
+@media only screen and (max-width: 720px) {
+    .roletag {
+        width: 100%;
+    }
+    
+    .eachcareer {
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .roletag {
+        width: 100%;
     }
 }

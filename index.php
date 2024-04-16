@@ -135,7 +135,7 @@
     </div>
 </section>
 
-<section class="content">
+<section class="content" id="services">
     <div class="top">
         <p>What we offer</p>
         <h3>Join the WORLD-CLASS clique</h3>

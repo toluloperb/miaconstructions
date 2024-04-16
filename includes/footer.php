@@ -1,7 +1,7 @@
 <footer>
     <div class="footer_links">
         <div class="footer_logo">
-            <a href=""><img src="assets/images/logowhite.png" alt=""></a>
+            <a href="<?= $webroot ?>"><img src="assets/images/logowhite.png" alt=""></a>
         </div>
         <div class="each_links">
             <div class="linkscategories">
