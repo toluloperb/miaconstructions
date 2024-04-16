@@ -16,7 +16,7 @@
             <h3>Building brands, Mastering markets & Scaling Sales</h3>
             <p>LET’S BE HONEST Marketing can be RUTHLESSLY DIFFICULT but that doesn’t have to be your problem. We’re here to make 
                 it 5x easier to be seen, heard and sellable.</p>
-            <a href=""><button class="button">Get in touch</button></a>
+            <a href="book"><button class="button">Get started</button></a>
         </div>
         <div class="title">
             <img src="assets/images/img77.jpg" alt="">
@@ -118,7 +118,7 @@
             </div>
         </div>
     </div>
-    <a href=""><button class="button">Explore</button></a>
+    <a href="portfolio"><button class="button">Explore</button></a>
 </section>
 
 <section class="content">
@@ -189,7 +189,7 @@
             </p>
         </div>
     </div>
-    <a href=""><button class="button">Join now</button></a>
+    <a href="book"><button class="button">Join now</button></a>
 </section>
 
 <?php
