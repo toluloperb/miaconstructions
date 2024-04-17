@@ -43,7 +43,7 @@
                     <a href="?q=graphic_designs">Graphic Designs</a>
                     <a href="?q=web_development">Web Development</a>
                     <a href="?q=social_media">Social Media</a>
-                    <a href="?q=logo_designs">Brand Identity/Logo Design</a>
+                    <a href="?q=brand_identity/logo">Brand Identity/Logo Design</a>
                     <a href="?q=printings">Printings & Billboards</a>
                     <a href="?q=digital_marketing">Digital Marketing</a>
                 </div>
