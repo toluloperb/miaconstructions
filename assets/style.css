@@ -757,11 +757,12 @@ footer p {
 .prevImage {
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .prevImage img {
     width: 100%;
+    border-radius: 7px;
 }
 
 .prevmenus {
@@ -811,6 +812,22 @@ footer p {
     font-size: 9pt;
     margin: 0;
     color: #e6e6e6;
+}
+
+.descriptionPrev {
+    width: 100%;
+    height: auto;
+    background-color: #ebe4d8;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.descriptionPrev p {
+    margin: 0;
+    font-size: 12pt;
+    font-family: var(--font-family);
+    color: #1a1a1a;
 }
 
 @media only screen and (max-width:720px) {

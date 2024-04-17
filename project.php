@@ -48,6 +48,12 @@
                     }
                 }
 
+                ?>
+                    <div class="descriptionPrev">
+                        <p><?= nl2br($imgdata['description']) ?></p>
+                    </div>
+                <?php
+
                 $updateProject = "UPDATE portfolio SET views = views + 1 WHERE uniq_id = '$uniqid'";
                 $updateProject = mysqli_query($con, $updateProject);
 
