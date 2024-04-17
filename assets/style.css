@@ -301,6 +301,9 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(114, 148, 148);
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     border-radius: 5px;
     cursor: pointer;
     transition: .4s;

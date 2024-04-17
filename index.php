@@ -1,6 +1,7 @@
 <?php
     include("includes/header.php");
     include("includes/navbar.php");
+    include("config/dbcon.php");
 ?>
 
 <section class="landingScreen">
@@ -30,93 +31,43 @@
         <p>Projects featured today by our curators</p>
     </div>
     <div class="projects children">
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
+        <?php
+            $select = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 8";
+            $select_run = mysqli_query($con, $select);
 
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
+            if(mysqli_num_rows($select_run) > 0)
+            {
+                foreach($select_run as $data)
+                {
+                    ?>
+                        <div class="eachproject">
+                            <?php
+                                $uniqId = $data["uniq_id"];
+                                $selectimg = "SELECT * FROM projects WHERE uniq_id= '$uniqId' ORDER BY id DESC LIMIT 1";
+                                $selectimg_run = mysqli_query($con, $selectimg);
 
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="eachproject">
-            <div class="backgroundImage"></div>
-            <div class="descript">
-                <p>Project title</p>
-                <div class="actions">
-                    <p><i class="fa fa-thumbs-up"></i> 120</p>
-                    <p><i class="fa">&#xf06e;</i> 200</p>
-                </div>
-            </div>
-        </div>
+                                if($selectimg_run)
+                                {
+                                    foreach($selectimg_run as $imgdata)
+                                    {
+                                        ?>
+                                            <a href="" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
+                                        <?php
+                                    }
+                                }
+                            ?>
+                            <div class="descript">
+                                <p><?= $data["title"] ?></p>
+                                <div class="actions">
+                                    <p><i class="fa fa-thumbs-up"></i> <?= $data["likes"] ?></p>
+                                    <p><i class="fa">&#xf06e;</i> <?= $data["views"] ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                }
+            }
+        ?>
     </div>
     <a href="portfolio"><button class="button">Explore</button></a>
 </section>

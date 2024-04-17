@@ -602,3 +602,80 @@ input[type=file]
     padding: 2px 9px;
     color: #fff;
 }
+
+.formContainer {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formContainer p {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.formContainer form {
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer form .inputrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+
+.formContainer form .inputrow div, .textarea div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.textarea div {
+    text-align: left;
+    width: 100%;
+}
+
+.textarea div textarea {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 10.5pt;
+    font-family: 'Roboto',sans-serif;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.formContainer form .inputrow div:nth-child(2) {
+    margin-right: 0;
+}
+
+.formContainer form .inputrow div input,
+.formContainer form .inputrow div select {
+    height: 35px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 8px;
+    font-size: 10.5pt;
+}
+
+.button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    border: none;
+    color: #fff;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
