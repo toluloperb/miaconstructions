@@ -51,7 +51,7 @@
                                     foreach($selectimg_run as $imgdata)
                                     {
                                         ?>
-                                            <a href="" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
+                                            <a href="project?id=<?= $uniqId ?>" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
                                         <?php
                                     }
                                 }

@@ -50,7 +50,7 @@
 
                 <div class="projects children">
                     <?php
-                        $select = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 8";
+                        $select = "SELECT * FROM portfolio WHERE cate = '$string' ORDER BY id DESC";
                         $select_run = mysqli_query($con, $select);
 
                         if(mysqli_num_rows($select_run) > 0)
@@ -69,7 +69,7 @@
                                                 foreach($selectimg_run as $imgdata)
                                                 {
                                                     ?>
-                                                        <a href="" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
+                                                        <a href="project?id=<?= $uniqId ?>" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
                                                     <?php
                                                 }
                                             }
@@ -124,7 +124,7 @@
 
                 <div class="projects children">
                     <?php
-                        $select = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 8";
+                        $select = "SELECT * FROM portfolio ORDER BY id DESC";
                         $select_run = mysqli_query($con, $select);
 
                         if(mysqli_num_rows($select_run) > 0)
@@ -143,7 +143,7 @@
                                                 foreach($selectimg_run as $imgdata)
                                                 {
                                                     ?>
-                                                        <a href="" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
+                                                        <a href="project?id=<?= $uniqId ?>" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
                                                     <?php
                                                 }
                                             }
