@@ -36,10 +36,13 @@
                                     <p>See more</p>
                                 </a>
 
-                                <a href="">
-                                    <i class="fa fa-heart-o"></i>
-                                    <p>Like</p>
-                                </a>
+                                <form id="idForm" action="" method="post" style="">
+                                    <input type="text" value="<?= $uniqid ?>" name="uniq_id" hidden>
+                                    <a id="like" style="cursor: pointer;">
+                                        <i id="heart" class="fa fa-heart-o"></i>
+                                        <p>Like</p>
+                                    </a>
+                                </form>
                             </div>
                         <?php
                     }

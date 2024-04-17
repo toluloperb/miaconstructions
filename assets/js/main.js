@@ -59,3 +59,22 @@ $("select").change(function (){
         $(this).css("border",'2px solid green');
     }
 }).trigger("change");
+
+$("#like").click(function() {
+
+    var url = "like.php"; // the script where you handle the form input.
+
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#idForm").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+                var elem = document.getElementById('heart');
+                elem.classList.remove('fa-heart-o');
+                elem.classList.add('fa-heart');
+           }
+         });
+
+    return false; // avoid to execute the actual submit of the form.
+});
