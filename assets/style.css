@@ -842,6 +842,10 @@ footer p {
         width: 80%;
     }
 
+    .descriptionPrev {
+        padding: 15px;
+    }
+
     .prevmenus a {
         margin-bottom: 0;
         margin-right: 10px;
