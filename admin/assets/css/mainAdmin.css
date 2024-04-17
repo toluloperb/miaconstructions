@@ -679,3 +679,77 @@ input[type=file]
     font-family: var(--font-family);
     border-radius: 5px;
 }
+
+.authContainer {
+    width: 100%;
+    height: 100%;
+    /* background-color: #1b1b1b; */
+    padding: 10%;
+    align-items: center;
+  }
+  
+.authcontainerForm {
+    width: 35%;
+    height: auto;
+    border: 1px solid #22222233;
+    border-radius: 10px;
+    margin-left: 30%;
+    padding: 4%;
+}
+
+.authcontainerForm p {
+    font-size: 10pt;
+    margin-top: 1.7%;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.wrap .inputLogin {
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid #22222236;
+    border-radius: 4px;
+    outline: none;
+}
+
+.wrap .forgotPassText {
+    text-decoration: none;
+    color: #131313;
+    /* background-color: #1b1b1b; */
+    /* padding: 5px 4% 5px 4%; */
+    font-size: 10pt;
+    margin-top: 5%;
+}
+
+.form__input{
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#p-viewer {
+    z-index: 9999;
+    position: absolute;
+    top: 25%;
+    right: 10px;
+}
+
+.sessionAlert {
+    font-size: 9pt;
+    color: red;
+}
+
+@media only screen and (max-width: 720px) {
+    .authcontainerForm {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .authContainer {
+        padding: 5%;
+    }
+}

@@ -15,7 +15,7 @@
                 <input class="inputLogin" type="password" name="password" placeholder="Your password" required>
                 <span id="p-viewer" class="fa fa-eye"></span>
             </div>
-            <button type="submit" name="login_btn" style="width: 100%;">Login</button><br><br>
+            <button class="button" type="submit" name="login_btn" style="width: 100%;">Login</button><br><br>
             <!-- <a href="reset-pass.php" class="forgotPassText">Forgot Password?</a><br> -->
         </form>
     </div>
