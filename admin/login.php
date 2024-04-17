@@ -5,7 +5,7 @@
 
 <div class="authContainer">
     <div class="authcontainerForm">
-        <a href="../index.php"><img src="../images/fibe logo.png" style="width: 40%; margin-left: 30%;"></a><br><br>
+        <a href="../index.php"><img src="assets/images/fibe logo.png" style="width: 40%; margin-left: 30%;"></a><br><br>
         <h3>Login to your account</h3>
         <p>Insert your Login Credentials</p><br>
         <form class="wrap" id="login" action="../functions/loginAuth.php" method="post" autocomplete="off">
