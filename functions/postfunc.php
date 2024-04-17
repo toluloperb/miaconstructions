@@ -39,4 +39,6 @@ if(isset($_POST["addProject"]))
     }
 }
 
+header("Location: ../.");
+die();
 ?>

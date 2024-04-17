@@ -868,3 +868,41 @@ footer p {
 .fa-heart {
     color: red;
 }
+
+.successContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+}
+
+.successContainer h3 {
+    color: #fff;
+    font-size: 24pt;
+    margin-bottom: 20px;
+}
+
+.successContainer img {
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+.successContainer p {
+    width: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width:720px) {
+    .successContainer p {
+        width: 80%;
+    }
+
+    .successContainer img {
+        width: 45%;
+    }
+}

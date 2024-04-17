@@ -16,7 +16,7 @@
                     We will get in touch with you shortly to discuss your 
                     Business
                 </p>
-                <form action="" method="post">
+                <form action="functions/userfunc" method="post">
                     <div class="inputrow">
                         <div>
                             <label for="">Full names</label>
@@ -77,7 +77,7 @@
                     We will get in touch with you shortly to discuss your 
                     Business
                 </p>
-                <form action="" method="post">
+                <form action="functions/userfunc" method="post">
                     <div class="inputrow">
                         <div>
                             <label for="">Full names</label>
@@ -128,7 +128,7 @@
                             <input required type="text" name="budget">
                         </div>
                     </div>
-                    <button required type="submit" class="button" name="book">Let's go</button>
+                    <button type="submit" class="button" name="book">Let's go</button>
                 </form>
             </section>
         <?php
