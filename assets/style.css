@@ -822,6 +822,7 @@ footer p {
         margin-left: 0%;
         border-radius: 7px;
         bottom: 0;
+        width: 80%;
     }
 
     .prevmenus a {
@@ -836,11 +837,10 @@ footer p {
     .prevmenus a i {
         font-size: 10pt;
         margin-bottom: 0;
-        font-family: var(--font-family);
     }
 
     .prevmenus a p {
-        display: none;
+        text-align: center;
     }
 }
 

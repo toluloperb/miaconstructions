@@ -22,8 +22,8 @@
                         ?>
                             <div class="prevmenus">
                                 <a>
-                                    <i class="fa fa-eye"> <?= $imgdata['views'] ?></i>
-                                    <p>Seen</p>
+                                    <i class="fa fa-eye"></i>
+                                    <p><?= $imgdata['views'] ?> Seen</p>
                                 </a>
 
                                 <a href="javascript:history.go(-1)">
@@ -40,7 +40,7 @@
                                     <input type="text" value="<?= $uniqid ?>" name="uniq_id" hidden>
                                     <a id="like" style="cursor: pointer;">
                                         <i id="heart" class="fa fa-heart-o"></i>
-                                        <p>Like</p>
+                                        <p><?= $imgdata['likes'] ?> Likes</p>
                                     </a>
                                 </form>
                             </div>
