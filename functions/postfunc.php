@@ -10,7 +10,7 @@ if(isset($_POST["addProject"]))
     $uniqId = rand(000000, 999999);
 
     $imageCount = count($_FILES['images']["name"]);
-    $image_ext = 'webpm';
+    $image_ext = substr(md5(microtime()),rand(0,26),5);
 	for($i=0;$i<$imageCount;$i++)
 	{
 		$imageName = $uniqId.$image_ext[$i];
