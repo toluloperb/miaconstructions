@@ -12,7 +12,11 @@
             {
                 $uniqid = $_GET['id'];
 
-                $selectimg = "SELECT * FROM portfolio WHERE uniq_id= '$uniqid' LIMIT 1";
+                $key = 'Trodpen2022*??-23';
+
+                $decrypt = openssl_decrypt(base64_decode($uniqid), 'aes-128-cbc', $key, 0, '5555555555555555');
+
+                $selectimg = "SELECT * FROM portfolio WHERE uniq_id= '$decrypt' LIMIT 1";
                 $selectimg_run = mysqli_query($con, $selectimg);
 
                 if($selectimg_run)
@@ -54,12 +58,12 @@
                     </div>
                 <?php
 
-                $updateProject = "UPDATE portfolio SET views = views + 1 WHERE uniq_id = '$uniqid'";
+                $updateProject = "UPDATE portfolio SET views = views + 1 WHERE uniq_id = '$decrypt'";
                 $updateProject = mysqli_query($con, $updateProject);
 
                 if($updateProject)
                 {
-                    $selectimg = "SELECT * FROM projects WHERE uniq_id= '$uniqid' ORDER BY id DESC";
+                    $selectimg = "SELECT * FROM projects WHERE uniq_id= '$decrypt' ORDER BY id DESC";
                     $selectimg_run = mysqli_query($con, $selectimg);
 
                     if($selectimg_run)

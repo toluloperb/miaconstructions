@@ -43,6 +43,11 @@
                         <div class="eachproject">
                             <?php
                                 $uniqId = $data["uniq_id"];
+
+                                $key = 'Trodpen2022*??-23';
+
+                                $encrypt = base64_encode(openssl_encrypt($uniqId, 'aes-128-cbc', $key, 0, 5555555555555555));
+                                
                                 $selectimg = "SELECT * FROM projects WHERE uniq_id= '$uniqId' ORDER BY id DESC LIMIT 1";
                                 $selectimg_run = mysqli_query($con, $selectimg);
 
@@ -51,7 +56,7 @@
                                     foreach($selectimg_run as $imgdata)
                                     {
                                         ?>
-                                            <a href="project?id=<?= $uniqId ?>" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
+                                            <a href="project?id=<?= $encrypt ?>" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
                                         <?php
                                     }
                                 }
