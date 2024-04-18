@@ -769,11 +769,6 @@ input[type=file]
     color: #fff;
 }
 
-.button {
-    padding: 0 !important;
-    background: none !important;
-}
-
 .button i {
     margin: 0 !important;
     padding: 0 !important;
