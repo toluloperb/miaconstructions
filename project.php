@@ -16,6 +16,9 @@
 
                 $decrypt = openssl_decrypt(base64_decode($uniqid), 'aes-128-cbc', $key, 0, '5555555555555555');
 
+                $updateProject = "UPDATE portfolio SET views = views + 1 WHERE uniq_id = '$decrypt'";
+                $updateProject = mysqli_query($con, $updateProject);
+
                 $selectimg = "SELECT * FROM portfolio WHERE uniq_id= '$decrypt' LIMIT 1";
                 $selectimg_run = mysqli_query($con, $selectimg);
 
@@ -57,9 +60,6 @@
                         <p><?= nl2br($imgdata['description']) ?></p>
                     </div>
                 <?php
-
-                $updateProject = "UPDATE portfolio SET views = views + 1 WHERE uniq_id = '$decrypt'";
-                $updateProject = mysqli_query($con, $updateProject);
 
                 if($updateProject)
                 {
