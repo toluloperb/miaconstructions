@@ -9,6 +9,7 @@
             <a href="portfolio"><li><i class="fa fa-briefcase"></i> Portfolio</li></a>
             <a href="career"><li><i class="fa fa-tasks"></i> Career</li></a>
             <a href=""><li><i class="fa fa-space-shuttle"></i> Services</li></a>
+            <a href="bookings"><li><i class="fas fa-comments"></i> Bookings</li></a>
 
             <p class="dashboardTitles">SERVICES</p>
             <br>

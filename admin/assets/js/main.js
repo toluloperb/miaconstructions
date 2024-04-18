@@ -57,6 +57,14 @@ $(document).ready(function () {
         $("#smsAlert").fadeOut(3000)
     })
 
+    // $('#closemodal').click(function() {
+    //     document.getElementById('modal').style.display = 'none';
+    // })
+
+    // $('#openModal').click(function() {
+        
+    // })
+
     setTimeout(function(){
         $("#alert").fadeOut(3000)
     }, 2000)

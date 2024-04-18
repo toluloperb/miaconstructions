@@ -753,3 +753,62 @@ input[type=file]
         padding: 5%;
     }
 }
+
+.bookbtn {
+    width: auto !important;
+}
+
+.modalContainer {
+    position: absolute;
+    right: 0;
+    background-color: #1a1a1aee;
+    margin-top: 60px;
+}
+
+.modal h3 {
+    color: #fff;
+}
+
+.button {
+    padding: 0 !important;
+    background: none !important;
+}
+
+.button i {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.aboutEnq {
+    color: #fff;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.enqDeet {
+    width: 50%;
+    margin-right: 20px;
+    overflow: auto;
+}
+
+.enqDeet:nth-child(2n) {
+    margin-right: 0;
+}
+
+.aboutEnq .head {
+    margin-bottom: 8px;
+    color: #c49132;
+}
+
+.aboutEnq .bottom {
+    margin-bottom: 30px;
+}
+
+.aboutEnq .bottom:last-child {
+    margin-bottom: 0;
+}
+
+.aboutEnq p {
+    font-size: 11pt;
+}
