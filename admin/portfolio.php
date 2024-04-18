@@ -46,7 +46,7 @@
                                                     <option value="Web Development">Web Development</option>
                                                     <option value="Digital Marketing">Digital Marketing</option>
                                                     <option value="Social Media">Social Media</option>
-                                                    <option value="Printings & Billboards">Printings & Billboards</option>
+                                                    <option value="printings">Printings & Billboards</option>
                                                 </select>
                                             </div>
                                         </div>
