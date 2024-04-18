@@ -41,7 +41,7 @@
                                 </a>
 
                                 <form id="idForm" action="" method="post" style="">
-                                    <input type="text" value="<?= $uniqid ?>" name="uniq_id" hidden>
+                                    <input type="text" value="<?= $decrypt ?>" name="uniq_id" hidden>
                                     <a id="like" style="cursor: pointer;">
                                         <i id="heart" class="fa fa-heart-o"></i>
                                         <p id="likesCount"><?= $imgdata['likes'] ?> Likes</p>
