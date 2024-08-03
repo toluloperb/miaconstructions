@@ -60,6 +60,45 @@
 
     }
 
+    if(isset($_POST['submitsurvey']))
+    {
+        $fullname = $_POST['fullname'];
+        $email = $_POST['email'];
+        $type = $_POST['type'];
+        $audience = $_POST['audience'];
+        $color = $_POST['color'];
+        $info = $_POST['info'];
+        $class = $_POST['class'];
+        $link_id = $_POST['link_id'];
+
+        $insertSurvey = "INSERT into survey_report (fullname,email,mode,audience,color,info,class,link_id)
+                        VALUES ('$fullname','$email','$type','$audience','$color','$info','$class','$link_id')";
+        $insertSurveyRun = mysqli_query($con, $insertSurvey);
+
+        if($insertSurveyRun)
+        {
+            $updateStatus = "UPDATE base_links SET status = 'Completed' WHERE link_id = '$link_id'";
+            $updateStatusRun = mysqli_query($con, $updateStatus);
+
+            if($updateStatusRun)
+            {
+                $url = "http://localhost/";
+                $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+                
+                $cURL = $root."survey?id=$link_id";
+                if($root == $url)
+                {
+                    header("Location:  $url/fibe/survey?id=$link_id");
+                }
+                else
+                {
+                    header("Location:  $cURL");
+                }
+                
+            }
+        }
+    }
+
     else
     {
         header("Location: ../.");

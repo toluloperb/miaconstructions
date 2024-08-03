@@ -22,6 +22,15 @@ $(function() {
         document.getElementById('cate_button_close').style.display = 'none';
         document.getElementById('cate_button').style.display = 'flex';
     })
+
+    // $(document).ready(function() {
+    //     $('a[href*=\\#]').on('click', function(e){
+    //         e.preventDefault();
+    //         $('html, body').animate({
+    //             scrollTop : $(this.hash).offset().top
+    //         }, 500);
+    //     });
+    // });
 });
 
 $("input").change(function (){

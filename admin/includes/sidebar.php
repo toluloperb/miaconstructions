@@ -15,6 +15,11 @@
             <br>
             <a href="updates"><li><i class="fas fa-bell"></i> Blog</li></a>
 
+            <p class="dashboardTitles">ADDITIONAL OPERATIONS</p>
+            <br>
+            <a href=""><li><i class="fas fa-bell"></i> Generate Invoice</li></a>
+            <a href="survey"><li><i class="fas fa-bell"></i> Customer Survey Reports</li></a>
+
             <p class="dashboardTitles">SETTINGS</p>
             <br>
             <a href=""><li><i class="fa fa-gear"></i> Account Settings</li></a>
