@@ -19,6 +19,10 @@
             <br>
             <a href=""><li><i class="fas fa-bell"></i> Generate Invoice</li></a>
             <a href="survey"><li><i class="fas fa-bell"></i> Customer Survey Reports</li></a>
+            <div class="row">
+                <a href="courses" style="margin-bottom: 0;"><li><i class="fa fa-graduation-cap"></i> Courses</li></a>
+                <i id="addcourse" style="cursor: pointer;" class="fa fa-plus"></i>
+            </div>
 
             <p class="dashboardTitles">SETTINGS</p>
             <br>

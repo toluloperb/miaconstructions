@@ -31,6 +31,10 @@ $(document).ready(function () {
         document.getElementById('addnewCustomer').style.backgroundColor = '#960044';
     })
 
+    $('#addcourse').click(function() {
+        document.getElementById('courseModal').style.display = 'flex';
+    })
+
     $('#closeEmailFormBtn').click(function() {
         document.getElementById('sendBulkEmailForm').style.display = 'none';
         document.getElementById('closeEmailFormBtn').style.display = 'none';

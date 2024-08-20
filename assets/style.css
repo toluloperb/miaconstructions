@@ -1015,9 +1015,271 @@ footer p {
     width: 80%;
 }
 
+.courses_container {
+    width: 100%;
+    height: auto;
+    /* background-color: #fff; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 10%;
+}
+
+.courserow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.courserow a {
+    width: 32%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: .3s;
+}
+
+.eachcourse {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0;
+    
+    margin-top: 20px;
+}
+
+.courserow a:nth-child(3n) {
+    margin-right: 0;
+    flex-basis: 32%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.courserow a:hover {
+    scale: 105%;
+}
+
+.bkgImg {
+    width: 100%;
+    height: 200px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.eachcourse h3 {
+    margin-top: 20px;
+}
+
+.eachcourse p {
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
+.eachcourse hr {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.starrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    flex-wrap: nowrap;
+}
+
+.starrow p {
+    font-size: 9pt;
+    margin-left: 4px;
+}
+
+.starrow i {
+    color: #c49132;
+    font-size: 10pt;
+}
+
+.eachcourse strong {
+    font-size: 16pt;
+}
+
+.formcolumn {
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formcolumn button {
+    margin-top: 0;
+}
+
+.formcolumn p {
+    margin-top: 20px;
+}
+
+.formcolumn form {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.formcolumn form .formfield:last-child {
+    margin-bottom: 0;
+}
+
+.formcolumn form p {
+    font-size: 10pt;
+}
+
+.formcolumn form hr {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.formcolumn form button {
+    margin-top: 20px;
+}
+
+.formfieldrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.formfieldrow .formfield {
+    width: 32% !important;
+}
+
+.formfieldrow .formfield:nth-child(3n) {
+    margin-right: 0;
+}
+
+.formfieldrow .formfield {
+    margin-right: 20px;
+}
+
+.formfieldrow .formfield input,
+.formfieldrow .formfield select,
+.formfieldrow .formfield textarea {
+    width: 100%;
+}
+
+.fieldrow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.fieldrow label {
+    margin-left: 10px;
+    font-size: 10pt;
+}
+
+.formcolumn form .minitext {
+    margin-top: 0 !important;
+    font-size: 8pt;
+    color: red;
+    display: none;
+}
+
+.paymentContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+    width: 40%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row hr {
+    width: 20%;
+    margin: 0;
+    opacity: 100%;
+    margin-right: 20px;
+}
+
+.paymentContainer p {
+    font-size: 10pt;
+    margin-top: 20px;
+}
+
+.paymentContainer hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 0;
+    opacity: 100%;
+}
+
+.spacebetween {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tape {
+    width: 40%;
+    height: 8px;
+    background-color: #c49132;
+}
+
+.blackbkg {
+    width: 40%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.blackbkg p {
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.courses_container .minitext {
+    font-size: 10pt;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width:768px) {
     .successContainer p {
         width: 80%;
+    }
+    
+    .paymentContainer {
+        width: 100%;
+    }
+
+    .blackbkg {
+        width: 100%;
+    }
+
+    .tape {
+        width: 100%;
+    }
+
+    .formcolumn {
+        padding: 20px;
+    }
+
+    .formfieldrow .formfield {
+        margin-right: 0;
+        width: 100% !important;
+    }
+    
+    .formfieldrow {
+        flex-direction: column;
     }
 
     .surveyarea h1 {

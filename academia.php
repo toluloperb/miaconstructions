@@ -8,6 +8,7 @@
     <div class="container">
         <h3>Academia</h3>
         <p>Become a Certified Tech Geek! Learn a Skill!</p>
+        <a href="student-portal" target="_blank"><button class="button" style="background-color: #fff; color: #000;">Login as a student</button></a>
     </div>
 </section>
 
@@ -16,42 +17,25 @@
         <h3>Pick a Skill &#128523;</h3>
         <!-- <p>Projects featured today by our curators</p> -->
     </div>
-    <div class="projects children">
-        <?php
-            $select = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 8";
-            $select_run = mysqli_query($con, $select);
-
-            if(mysqli_num_rows($select_run) > 0)
-            {
-                foreach($select_run as $data)
-                {
-                    ?>
-                        <div class="eachproject">
-                            <?php
-                                $uniqId = $data["uniq_id"];
-
-                                $key = 'Trodpen2022*??-23';
-
-                                $encrypt = base64_encode(openssl_encrypt($uniqId, 'aes-128-cbc', $key, 0, 5555555555555555));
-                                
-                                $selectimg = "SELECT * FROM projects WHERE uniq_id= '$uniqId' ORDER BY id DESC LIMIT 1";
-                                $selectimg_run = mysqli_query($con, $selectimg);
-
-                                if($selectimg_run)
-                                {
-                                    foreach($selectimg_run as $imgdata)
-                                    {
-                                        ?>
-                                            <a href="project?id=<?= $encrypt ?>" class="backgroundImage"><div class="backgroundImage" style="background: url(uploads/<?= $imgdata['images'] ?>)"></div></a>
-                                        <?php
-                                    }
-                                }
-                            ?>
-                        </div>
-                    <?php
-                }
-            }
-        ?>
+    <div class="courses_container">
+        <div class="courserow">
+            <a href="enroll"><div class="eachcourse">
+                <div class="bkgImg" style="background-image: url(assets/images/gfx.jfif);"></div>
+                <h3>Graphics Designing</h3>
+                <p>The Ultimate Graphic Design Course Which Covers Photoshop, Illustrator, InDesign, Design Theory, Branding, Logo Design</p>
+                <hr>
+                <div class="starrow">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p>(200,000)</p>
+                </div>
+                <p><strong>&#x20A6; 75,000</strong></p>
+                <p>+&#x20A6; 5,000 Application Fee</p>
+            </div></a>
+        </div>
     </div>
 </section>
 

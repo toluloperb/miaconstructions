@@ -920,6 +920,20 @@ input[type=file]
     margin-left: 10px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+#courseModal {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+}
+
 @media only screen and (max-width: 720px) {
     .authcontainerForm {
         width: 100%;
