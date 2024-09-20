@@ -15,6 +15,16 @@
             <br>
             <a href="updates"><li><i class="fas fa-bell"></i> Blog</li></a>
 
+            <p class="dashboardTitles">ADDITIONAL OPERATIONS</p>
+            <br>
+            <a href=""><li><i class="fas fa-bell"></i> Generate Invoice</li></a>
+            <a href="free-training"><li><i class="fas fa-plus"></i> Free Training Sessions</li></a>
+            <a href="survey"><li><i class="fas fa-bell"></i> Customer Survey Reports</li></a>
+            <div class="row">
+                <a href="courses" style="margin-bottom: 0;"><li><i class="fa fa-graduation-cap"></i> Courses</li></a>
+                <i id="addcourse" style="cursor: pointer;" class="fa fa-plus"></i>
+            </div>
+
             <p class="dashboardTitles">SETTINGS</p>
             <br>
             <a href=""><li><i class="fa fa-gear"></i> Account Settings</li></a>

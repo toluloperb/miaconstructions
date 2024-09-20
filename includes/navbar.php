@@ -8,6 +8,7 @@
             <a href="index#services" class="link">Services</a>
             <a class="link" href="portfolio">Portfolio</a>
             <a class="link" href="career">Career</a>
+            <a class="link" href="academia">Academia</a>
             <a href="book?b=quote" style="padding: none; border: none"><button>Get a Quote</button></a>
         </li>
     </div>
@@ -23,6 +24,7 @@
         <a href="index#services">Services</a>
         <a href="portfolio">Portfolio</a>
         <a href="career">Career</a>
+        <a href="academia">Academia</a>
         <a href="book?b=quote"><button>Get a Quote</button></a>
     </li>
 </div>

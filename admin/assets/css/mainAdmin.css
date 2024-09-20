@@ -743,6 +743,251 @@ input[type=file]
     color: red;
 }
 
+.history {
+    width: 100%;
+    /* background: #c50102; */
+    margin-top: 20px;
+    height: auto;
+}
+
+.historyrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 7px 0px 0px;
+}
+
+.this {
+    width: 30%;
+}
+
+.status {
+    width: 10%;
+}
+
+.worth, .amount {
+    width: 35%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.historyrow {
+    margin-bottom: 7px;
+}
+
+.eachreport {
+    padding: 15px;
+    margin-top: 5px;
+    background: #6666661e;
+    border: 1px solid #6666661e;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.eachreport:hover {
+    border: 1px solid #c49132;
+}
+
+.eachreplink:nth-child(even) {
+    background-color: #cccccc;
+}
+
+.taghead {
+    width: 50%;
+}
+
+.eachreport .status {
+    background-color: var(--main-color);
+    font-size: 8pt;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 25px;
+    color: var(--white);
+    width: fit-content;
+}
+
+.board {
+    margin-top: 20px;
+}
+
+.viewModal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: #000000b9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    display: none;
+    overflow: auto;
+}
+
+.modalContentContainer {
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spacebetween {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hrmain {
+    height: 2px;
+    width: 100%;
+    background-color: #d2d2d20c;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.eachreplink {
+    cursor: pointer;
+}
+
+.closebtnView {
+    background-color:white; 
+    color:red; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50px; 
+    padding: 0;
+    margin-bottom: 20px;
+    transition: .4s;
+    border: none;
+}
+
+.closebtnView:hover {
+    scale: 115%;
+    background-color:red; 
+    color:#fff; 
+    border: none;
+}
+
+.closebtnView i {
+    font-size: 15pt;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row p {
+    margin-left: 10px;
+}
+
+.glinkform {
+    text-align: left;
+    border: 1px solid #3333332e;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.glinkform p {
+    font-size: 10pt;
+}
+
+#type {
+    height: 38px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #1a1a1a2e !important;
+    margin-right: 10px;
+}
+
+.eclipse_text {
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+}
+
+.view_color {
+    width: 50px;
+    height: 20px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+#courseModal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.686);
+}
+
+.containerAddCourse {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 25%;
+}
+
+.containerAddCourse h1 {
+    text-align: left;
+}
+
+.containerAddCourse .column {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.column form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.column form .formfield {
+    display:flex;
+    flex-direction: column;
+}
+
+.formlabel {
+    font-size: 18pt !important;
+}
+
+.formfied input, .formfied textarea, .roundbutton {
+    border: 2px solid #616161 !important;
+    height: 60px;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 18pt;
+    font-family: var(--font-family);
+    margin-top: 8px;
+}
+
+.roundbutton {
+    padding: 0;
+    width: 100%;
+}
+
+.formfied textarea {
+    height: 300px;
+    padding: 30px;
+}
+
+.newfield {
+    display: flex;
+    flex-direction: column !important;
+    margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 720px) {
     .authcontainerForm {
         width: 100%;

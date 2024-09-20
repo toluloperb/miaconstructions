@@ -31,6 +31,10 @@ $(document).ready(function () {
         document.getElementById('addnewCustomer').style.backgroundColor = '#960044';
     })
 
+    $('#addcourse').click(function() {
+        document.getElementById('courseModal').style.display = 'flex';
+    })
+
     $('#closeEmailFormBtn').click(function() {
         document.getElementById('sendBulkEmailForm').style.display = 'none';
         document.getElementById('closeEmailFormBtn').style.display = 'none';
@@ -83,6 +87,46 @@ $(document).ready(function () {
 
     $('#closePostEditBtn').click(function() {
         document.getElementById('editPost').style.display = 'none';
+    })
+
+    $('#generatelink').click(function() {
+        var type = document.getElementById('type').value;
+
+        $.ajax({
+            method: "POST",
+            url: "../functions/postfunc.php",
+            data: {
+                'generate_link': true,
+                'type': type,
+            },
+            success: function (response) {
+                $('.modalContentContainer').html(response);
+                document.getElementById('viewModalview').style.display = 'flex';
+            }
+        });
+    })
+
+    $('.eachreplink').click(function (e) {
+        e.preventDefault();
+    
+        
+        var id = $(this).find('.id').text();
+        $.ajax({
+            method: "POST",
+            url: "../functions/postfunc.php",
+            data: {
+                'click_btn': true,
+                'id': id,
+            },
+            success: function (response) {
+                $('.modalContentContainer').html(response);
+                document.getElementById('viewModalview').style.display = 'flex';
+            }
+        });
+    })
+    
+    $("#closebtnView").click(function() {
+        document.getElementById('viewModalview').style.display = 'none';
     })
 });
 
