@@ -149,6 +149,36 @@
         }
     }
 
+    else if(isset($_POST['freeBtn']))
+    {
+        $fullname = $_POST['fullname'];
+        $email = $_POST['email'];
+        $interest = $_POST['interest'];
+
+        // Check if email exist
+        $check = "SELECT * FROM free_training WHERE email = '$email'";
+        $check_run = mysqli_query($con, $check);
+        
+        if(mysqli_num_rows($check_run) > 0)
+        {
+            echo "Fail";
+        }
+        else
+        {
+            $insert_free_training = "INSERT INTO free_training (fullname,email,interest) VALUES ('$fullname','$email','$interest')";
+            $insert_free_training_run = mysqli_query($con, $insert_free_training);
+
+            if($insert_free_training_run)
+            {
+                echo "Success";
+            }
+            else
+            {
+                echo "Fail";
+            }
+        }
+    }
+
     else
     {
         header("Location: ../.");

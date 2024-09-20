@@ -87,3 +87,82 @@ $("#like").click(function() {
 
     return false; // avoid to execute the actual submit of the form.
 });
+
+$("#nextBtn1").click(function () { 
+    // e.preventDefault();
+
+    var fullname = document.getElementById('fullname').value;
+
+    if(fullname=="")
+    {
+        document.getElementById('redtext').style.display = 'block';
+    }
+    else
+    {
+        document.getElementById('stage2').style.display = 'block';
+        document.getElementById('stage1').style.display = 'none';
+    }
+});
+
+$("#nextBtn2").click(function () { 
+    // e.preventDefault();
+    var email = document.getElementById('email').value;
+    if(email=="")
+    {
+        document.getElementById('redtext2').style.display = 'block';
+    }
+    else
+    {
+        document.getElementById('stage3').style.display = 'block';
+        document.getElementById('stage2').style.display = 'none';
+        document.getElementById('stage1').style.display = 'none';
+    }
+});
+
+$("#nextBtn3").click(function () { 
+    // e.preventDefault();
+    var interest = document.getElementById('interest').value;
+    var email = document.getElementById('email').value;
+    var fullname = document.getElementById('fullname').value;
+
+    if(interest=="")
+    {
+        document.getElementById('redtext3').style.display = 'block';
+    }
+    else
+    {
+        $.ajax({
+            method: "POST",
+            url: "functions/userfunc.php",
+            data: {
+                'freeBtn': true,
+                'interest': interest,
+                'email': email,
+                'fullname': fullname,
+            },
+            success: function (response) {
+                if(response=="Success")
+                {
+                    document.getElementById('stage3').style.display = 'none';
+                    document.getElementById('stage2').style.display = 'none';
+                    document.getElementById('stage1').style.display = 'none';
+                    document.getElementById('success').style.display = 'flex';
+                }
+                else if(response=="Fail")
+                {
+                    document.getElementById('stage3').style.display = 'none';
+                    document.getElementById('stage2').style.display = 'none';
+                    document.getElementById('stage1').style.display = 'none';
+                    document.getElementById('failed').style.display = 'flex';
+                }
+                else
+                {
+                    document.getElementById('stage3').style.display = 'none';
+                    document.getElementById('stage2').style.display = 'none';
+                    document.getElementById('stage1').style.display = 'none';
+                    document.getElementById('failed').style.display = 'flex';
+                }
+            }
+        });
+    }
+});

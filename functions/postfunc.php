@@ -196,6 +196,42 @@ else if(isset($_POST['generate_link']))
     }
 }
 
+else if(isset($_POST["addNewCourse"]))
+{
+    $course_title = $_POST['course_title'];
+    $course_desc = $_POST['course_desc'];
+    $price = $_POST['price'];
+
+    $imageName = $_FILES['image']['name'];
+
+    $path = "../uploads/".$imageName;
+    $target = $_FILES["image"]["tmp_name"];
+
+    // Check Course 
+    $check = "SELECT * FROM courses WHERE course_title = '$course_title'";
+    $check_run = mysqli_query($con, $check);
+
+    if(mysqli_num_rows($check_run) > 0)
+    {
+        header("Location:". $_SERVER['HTTP_REFERER']);
+        die();
+    }
+    else
+    {
+        $insert = "INSERT into courses (course_title,course_desc,price,image) 
+                VALUE ('$course_title','$course_desc','$price','$imageName')";
+        $insert_run = mysqli_query($con, $insert);
+
+        if($insert_run)
+        {
+            if(move_uploaded_file($target, $path))
+            {
+                header("Location: ../admin/courses");
+            }
+        }
+    }
+}
+
 else
 {
     header("Location: ../.");
