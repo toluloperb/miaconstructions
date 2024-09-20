@@ -45,7 +45,20 @@
                 <p for="">Select a skill you'll like to learn</p>
                 <select type="text" id="interest" required>
                     <option value="" selected disabled>Ex: UI/UX Design</option>
-                    <option value="UI/UX Design">UI/UX Design</option>
+                    <?php
+                        $import = "SELECT * FROM courses";
+                        $import_run = mysqli_query($con, $import);
+
+                        if(mysqli_num_rows($import_run) > 0)
+                        {
+                            foreach($import_run as $data)
+                            {
+                                ?>
+                                    <option value="<?= $data['course_title'] ?>"><?= $data['course_title'] ?></option>
+                                <?php
+                            }
+                        }
+                    ?>
                 </select>
                 <p class="redtext minitext" id="redtext3">Missing Values***</p>
             </div>

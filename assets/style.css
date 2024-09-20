@@ -1364,8 +1364,24 @@ footer p {
 }
 
 @media only screen and (max-width:768px) {
-    .successContainer p {
+    .successContainer p, .stage1, .stage2, .stage3, .stage4 {
         width: 80%;
+    }
+
+    .success {
+        padding: 0px;
+    }
+
+    .success img {
+        width: 50%;
+    }
+    
+    .free-training {
+        padding: 5% 0%;
+    }
+
+    .free-training form {
+        text-align: left;
     }
     
     .adsAcademia a {
