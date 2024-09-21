@@ -21,6 +21,8 @@
     <script language="JavaScript"  src="assets/js/v1100min.js"></script>
     <script src="assets/js/v341min.js"></script>
 
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">

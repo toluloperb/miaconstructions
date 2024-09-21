@@ -5,58 +5,53 @@
     // 200 - User Not Found
     // 300 - Open New Input
 
-    if(isset($_POST["generateotp"]))
+    
+
+    if(isset($_POST["verify"]))
     {
-        $email = $_POST["email"];
+        $email = $_POST['email'];
+        $password = $_POST["password"];
+        $cpassword = $_POST["cpassword"];
 
-        $check_if_password_exist = "SELECT * FROM students WHERE email = '$email'";
-        $check_if_password_exist_run = mysqli_query($con, $check_if_password_exist);
+        $student_no = rand(000000000,999999999);
 
-        if(mysqli_num_rows($check_if_password_exist_run) > 0)
+        if($cpassword == $password)
         {
-            foreach($check_if_password_exist_run as $verify)
+            $check_if_email_exist = "SELECT * FROM students WHERE email = '$email' LIMIT 1";
+            $check_if_email_exist_run = mysqli_query($con, $check_if_email_exist);
+
+            if($check_if_email_exist_run)
             {
-                $password = $verify["password"];
-
-                if($password == "")
+                foreach($check_if_email_exist_run as $verify)
                 {
-                    $otp = rand(000000, 999999);
+                    $currentpassword = $verify['password'];
 
-                    $update = "UPDATE students SET otp='$otp' WHERE email = '$email'";
-                    $update_run = mysqli_query($con, $update);
+                    if($currentpassword == "")
+                    {
+                        // Update Password
+                        $update_password = "UPDATE students SET password = '$password', student_no = '$student_no' WHERE email='$email'";
+                        $update_password_run = mysqli_query($con, $update_password);
+
+                        if($update_password_run)
+                        {
+                            header("Location: ../student-portal");
+                        }
+                        
+                    }
+                    else 
+                    {
+                        $_SESSION['status'] = "Seems you forgot your password!";
+                        header("Location: ../student-portal/recovery");
+                        die();
+                    }
                 }
             }
         }
         else
         {
-            echo "200";
-        }
-    }
-
-    else if(isset($_POST["verify"]))
-    {
-        $email = $_POST["email"];
-        $otp = $_POST["otp"];
-
-        $check_if_otp_exist = "SELECT * FROM students WHERE email = '$email' LIMIT 1";
-        $check_if_otp_exist_run = mysqli_query($con, $check_if_otp_exist);
-
-        if($check_if_otp_exist_run)
-        {
-            foreach($check_if_otp_exist_run as $verify)
-            {
-                $token = $verify["otp"];
-
-                if($token == "$otp")
-                {
-                    $_SESSION['auth'] = true;
-                    $_SESSION['auth_email'] = "$email";
-                }
-                else
-                {
-                    echo "200";
-                }
-            }
+            $_SESSION['status'] = "Password do not match!";
+            header("Location:".$_SERVER['HTTP_REFERER']);
+            die();
         }
     }
 ?>

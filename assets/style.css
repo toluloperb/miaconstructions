@@ -1363,6 +1363,14 @@ footer p {
     margin-bottom: 30px;
 }
 
+.payBtnrow button {
+    margin-right: 20px;
+}
+
+.payBtnrow button:last-child {
+    margin-right: 0;
+}
+
 @media only screen and (max-width:768px) {
     .successContainer p, .stage1, .stage2, .stage3, .stage4 {
         width: 80%;

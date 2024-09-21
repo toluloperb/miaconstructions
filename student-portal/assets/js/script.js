@@ -116,41 +116,42 @@
         });
     })
 
-    $("#generateotp").click(function(e) {
-      e.preventDefault();
+    // $("#generateotp").click(function(e) {
+    //   e.preventDefault();
 
-        var email = document.getElementById('email').value;
+    //     var email = document.getElementById('email').value;
 
-        $.ajax({
-          method: "POST",
-          url: "../functions/studentfunc.php",
-          data: {
-              'generateotp': true,
-              'email': email,
-          },
-          success: function (response) {
+    //     $.ajax({
+    //       method: "POST",
+    //       url: "../functions/studentfunc.php",
+    //       data: {
+    //           'generateotp': true,
+    //           'email': email,
+    //       },
+    //       success: function (response) {
             
-              if(response == '200')
-              {
-                  document.getElementById("message_div").style.display="block";
-                  document.getElementById("alert").innerHTML= "<i class='fa fa-warning'> User Not Found</i>";
-              }
-              else
-              {
-                  document.getElementById("otpfield").style.display="flex";
-                  document.getElementById("verify").style.display="block";
-                  document.getElementById("generateotp").style.display="none";
-                  document.getElementById("message_div").style.display="none";
-              }
-          }
-        });
-    })
+    //           if(response == '200')
+    //           {
+    //               document.getElementById("message_div").style.display="block";
+    //               document.getElementById("alert").innerHTML= "<i class='fa fa-warning'> User Not Found</i>";
+    //           }
+    //           else
+    //           {
+    //               document.getElementById("otpfield").style.display="flex";
+    //               document.getElementById("verify").style.display="block";
+    //               document.getElementById("generateotp").style.display="none";
+    //               document.getElementById("message_div").style.display="none";
+    //           }
+    //       }
+    //     });
+    // })
 
     $("#verify").click(function(e) {
       e.preventDefault();
 
         var email = document.getElementById('email').value;
-        var otp = document.getElementById('otp').value;
+        var password = document.getElementById('password').value;
+        var cpassword = document.getElementById('cpassword').value;
 
         $.ajax({
           method: "POST",
@@ -158,7 +159,8 @@
           data: {
               'verify': true,
               'email': email,
-              'otp': otp,
+              'password': password,
+              'cpassword': cpassword,
           },
           success: function (response) {
             
