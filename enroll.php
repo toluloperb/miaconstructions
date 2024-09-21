@@ -43,7 +43,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- <div class="formfieldrow">
+                                    <div class="formfieldrow">
                                         <div class="formfield">
                                             <label for="">Address</label>
                                             <input class="field" id="address" type="text" name="address"required>                        
@@ -212,7 +212,7 @@
                                     <div class="fieldrow">
                                         <input class="field" type="checkbox" id="t&c" value="agreed to t&c" required>
                                         <label for="">I have read and agree to <a href="">terms &amp; Condition</a> applicable to the course and the institution of learning</label>
-                                    </div> -->
+                                    </div>
 
                                     <button type="submit" class="button" name="submitStudentregister">Submit</button>
                                 </form>
