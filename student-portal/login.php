@@ -36,7 +36,7 @@
         </form>
     </div>
     <div class="illustrationContainer">
-        <div class="text" style="background: url(assets/images/morning.jpg);">
+        <!-- <div class="text" style="background: url(assets/images/morning.jpg);">
             <div>
                 <h1>Have you just made payment and yet to complete setting up your account?</h1>
                 <p>Get ready a screenshot/picture (Bank teller, Bank App Generated Receipt or POS Receipt) as evidence of payment while the system generate a 
@@ -45,7 +45,7 @@
                 <p style="color: red;">ATTEMPT TO FORGERY MAY LEAD TO LOSS OF ACCOUNT AND CANDIDATE WILL BE PROSECUTED BY LAW.</p>
                 <a href="complete-setup"><button class="button">Continue <i style="margin-left: 10px;" class="fa fa-arrow-right"></i></button></a>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 

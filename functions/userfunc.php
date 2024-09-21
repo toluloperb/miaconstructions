@@ -128,24 +128,42 @@
         $edu_status = $_POST["edu_status"];
         $job_status = $_POST["job_status"];
 
+        $price = $_POST['price'];
+
         $passport = $_FILES["passport"]["name"];
 
-        $submitapplication = "INSERT into students (full_name, email, phone, address, dob, gender, marital_status, 
-                            disability, religion, sfull_name, semail, sphone, saddress, srelationship, sjob, kfull_name, 
-                            kemail, kphone, kaddress, krelationship, course_of_study, passport,allergies,job_status,edu_status) VALUES ('$full_name', '$email', 
-                            '$phone', '$address', '$dob', '$gender', '$marital_status', '$disability', '$religion', '$sfull_name', '$semail', '$sphone', 
-                            '$saddress', '$srelationship', '$sjob', '$kfull_name', '$kemail', '$kphone', '$kaddress', '$krelationship', '$course_of_study', 
-                            '$passport','$allergies','$job_status','$edu_status')";
-        $submitapplicationrun = mysqli_query($con, $submitapplication);
+        // Check if email exists
+        $check = "SELECT * FROM students WHERE email = '$email'";
+        $checkrun = mysqli_query($con, $check);
 
-        if($submitapplicationrun)
+        if(mysqli_num_rows($checkrun) > 0)
         {
-            header("Location: ../payment-details.php");
+            $_SESSION['status'] = "User already exist";
+            header("Location:" . $_SERVER['HTTP_REFERER']);
+            die();
         }
         else
         {
-            header("Location:" . $_SERVER['HTTP_REFERER']);
-            die();
+            $submitapplication = "INSERT into students (full_name, email, phone, address, dob, gender, marital_status, 
+                                disability, religion, sfull_name, semail, sphone, saddress, srelationship, sjob, kfull_name, 
+                                kemail, kphone, kaddress, krelationship, course_of_study, passport,allergies,job_status,edu_status) VALUES ('$full_name', '$email', 
+                                '$phone', '$address', '$dob', '$gender', '$marital_status', '$disability', '$religion', '$sfull_name', '$semail', '$sphone', 
+                                '$saddress', '$srelationship', '$sjob', '$kfull_name', '$kemail', '$kphone', '$kaddress', '$krelationship', '$course_of_study', 
+                                '$passport','$allergies','$job_status','$edu_status')";
+            $submitapplicationrun = mysqli_query($con, $submitapplication);
+
+            if($submitapplicationrun)
+            {
+                $_SESSION['price']= $price;
+                $_SESSION['email']= $email;
+                $_SESSION['phone']= $phone;
+                header("Location: ../payment-details");
+            }
+            else
+            {
+                header("Location:" . $_SERVER['HTTP_REFERER']);
+                die();
+            }
         }
     }
 

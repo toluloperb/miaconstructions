@@ -597,9 +597,9 @@ main {
     width: 30%;
 }
 
-#otpfield, #verify {
+/* #otpfield, #verify {
     display: none;
-}
+} */
 
 .sessionMsg p {
     color: var(--main-color);

@@ -166,3 +166,34 @@ $("#nextBtn3").click(function () {
         });
     }
 });
+
+function payWithPaystack(){
+    var customer_email = document.getElementById("email").value;
+    var price = document.getElementById("price").value;
+    var phone = document.getElementById("phone").value;
+
+    // alert(price);
+    var handler = PaystackPop.setup({
+        key: 'pk_test_7180328bd5d5cb87cf78fa62762a3d6f8dabe315',
+        email: customer_email,
+        amount: price*100,
+        ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+        metadata: {
+            custom_fields: [
+            {
+                display_name: "Mobile Number",
+                variable_name: "mobile_number",
+                value: phone,
+            }
+            ]
+        },
+        callback: function(response){
+            // alert('success. transaction ref is ' + response.reference);
+            window.location = 'student-portal/complete-setup?femail='+customer_email;
+        },
+        onClose: function(){
+            alert('You are about to close the payment page');
+        }
+    });
+handler.openIframe();
+}

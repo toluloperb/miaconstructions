@@ -40,7 +40,7 @@
                     foreach($import_run as $data)
                     {
                         ?>
-                            <a href=""><div class="eachcourse">
+                            <a href="enroll?id=<?= $data['id'] ?>"><div class="eachcourse">
                                 <div class="bkgImg" style="background-image: url(uploads/<?= $data['image'] ?>);"></div>
                                 <h3><?= $data['course_title'] ?></h3>
                                 <p><?= nl2br($data['course_desc']) ?></p>
