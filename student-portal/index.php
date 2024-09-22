@@ -85,7 +85,7 @@
                     ?>
                     <h2>Profile</h2> <br>
                     <form action="functions/userfunc.php" method="post" enctype="multipart/form-data">
-                        <div class="profilepics" style="background: url('../profiles/<?= $check['passport'] ?>');"></div>
+                        <div class="profilepics" style="background: url('../uploads/<?= $check['passport'] ?>');"></div>
                         <div class="formfieldrow">
                             <div class="formfield">
                                 <label for="">Full Name</label>
