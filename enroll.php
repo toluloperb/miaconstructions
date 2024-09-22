@@ -126,7 +126,7 @@
                                     <div class="formfieldrow">
                                         <div class="formfield">
                                             <label for="">Upload a Passport photograph</label>
-                                            <input type="file" name="passport" accept="jpg,png" id="" required>
+                                            <input type="file" name="passport" id="" required>
                                         </div>
                                     </div>
 
@@ -205,7 +205,7 @@
                                     <div class="formfieldrow">
                                         <div class="formfield">
                                             <label for="">Course of Study</label>
-                                            <input class="field" id="course_of_study" type="text" name="course_of_study"required value="Graphics Designing" readonly>                        
+                                            <input class="field" id="course_of_study" type="text" name="course_of_study"required value="<?= $data['course_title'] ?>" readonly>                        
                                         </div>
                                     </div>
 

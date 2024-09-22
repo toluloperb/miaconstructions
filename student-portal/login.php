@@ -22,7 +22,7 @@
         ?>
         <form action="../functions/studentloginauth" method="post">
             <div>
-                <label for="">Username</label>
+                <label for="">Email</label>
                 <input type="text" name="username" required>
             </div>
 

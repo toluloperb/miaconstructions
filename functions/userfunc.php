@@ -131,6 +131,9 @@
         $price = $_POST['price'];
 
         $passport = $_FILES["passport"]["name"];
+        $passport_tmp = $_FILES['passport']['tmp_name'];
+
+        $path = "../uploads/".$passport;
 
         // Check if email exists
         $check = "SELECT * FROM students WHERE email = '$email'";
@@ -154,6 +157,7 @@
 
             if($submitapplicationrun)
             {
+                move_uploaded_file($passport_tmp, $path);
                 $_SESSION['price']= $price;
                 $_SESSION['email']= $email;
                 $_SESSION['phone']= $phone;
