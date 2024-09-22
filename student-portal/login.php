@@ -8,7 +8,7 @@
 <section class="loginContainer">
     <div class="formContainer">
         <a href="../."><img src="../assets/images/fibe logo.png" alt=""></a>
-        <h5>Sign in to your account</h5>
+        <h5>Sign in to your student account</h5>
         <?php
             if(isset($_SESSION['status']))
             {

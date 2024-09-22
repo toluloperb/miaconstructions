@@ -34,8 +34,8 @@
         }
 
         ?>
-            <section class="loginContainer">
-                <div class="formContainer fullform">
+            <section class="loginContainer ">
+                <div class="formContainer fullwidth fullform">
                     <!-- <a href="../."><img src="../assets/images/fibe logo.png" alt=""></a> -->
                     <h5>Setup your Password</h5>
                     <div id="message_div" class="sessionMsg">
@@ -49,12 +49,12 @@
 
                         <div id="">
                             <label for="">New Password</label>
-                            <input type="phone" name="password" id="password" required>
+                            <input type="password" name="password" id="password" required>
                         </div>
 
                         <div id="">
                             <label for="">Re-enter New Password</label>
-                            <input type="phone" name="cpassword" id="cpassword" required>
+                            <input type="password" name="cpassword" id="cpassword" required>
                         </div>
                         <button class="button"  name="verify" type="submit">Set New Password</button>
                     </form>

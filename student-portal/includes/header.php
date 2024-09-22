@@ -29,5 +29,7 @@
         if (c==44) event.preventDefault();
         }
     </script>
+
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
