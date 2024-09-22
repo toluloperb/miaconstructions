@@ -900,9 +900,36 @@ main {
     }
 }
 
+.resetheader {
+    width: 30%;
+}
+
+.resetheader h5 {
+    width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     .illustrationContainer {
         display: none;
+    }
+
+    .resetheader {
+        width: 100%;
+    }
+
+    .formContainer a img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .fullwidth {
+        width: 100% !important;
+        padding: 0%;
+    }
+
+    .fullwidth form, .fullwidth h5 {
+        width: 100%;
     }
 
     .infos {
@@ -1032,7 +1059,7 @@ main {
     #mobilesidebar {
         width: 100%;
         z-index: 1;
-        background-color: #ffdddd;
+        background-color: var(--white);
     }
 
     #closeBtn {
@@ -1092,7 +1119,7 @@ main {
 
     .menubtn p, .menubtn i {
         font-weight: 500;
-        color: var(--main-color);
+        color: var(--white);
     }
 
     .menubtn{
@@ -1104,7 +1131,7 @@ main {
         color: var(--white);
         border-radius: 10px;
         width: 100%;
-        background-color: #ffeded;
+        background-color: var(--main-color);
     }
     
     .formContainer {
